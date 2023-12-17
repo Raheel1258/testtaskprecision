@@ -5,7 +5,7 @@ import Todo from "./Todo";
 
 const Body = ({tasks}) => {
     return (
-        <Box h="100%" overflow="scroll">
+        <Box h="100%">
             {/* new messages section */}
             <Profile />
             <Text mb={5} fontSize="sm">NEW MESSAGES</Text>

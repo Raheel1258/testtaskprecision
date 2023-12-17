@@ -3,13 +3,12 @@ import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 
 const MobilePreview = ({ tasks }) => {
-  const visibleTasks = tasks.filter(task => !task.isHidden)
+  const visibleTasks = tasks.filter((task) => !task.isHidden);
   return (
-    <Box width="100%" h="100%" p={5} overflowY="scroll">
+    <Box width="100%" h="100%" p={5}>
       <Box
         m="auto"
         width="352.65px"
-        overflow="scroll"
         height="724px"
         border="8px"
         borderRadius="50px"
@@ -27,9 +26,17 @@ const MobilePreview = ({ tasks }) => {
           color="blackAlpha.700"
           fontWeight="bold"
           borderRadius="50px"
-          overflow="scroll"
         >
-          <GridItem overflow="scroll" px={5} area="main">
+          <GridItem
+            sx={{
+              "::-webkit-scrollbar": {
+                display: "hidden",
+              },
+            }}
+            overflowY="scroll"
+            px={5}
+            area="main"
+          >
             <Body tasks={visibleTasks} />
           </GridItem>
         </Grid>
