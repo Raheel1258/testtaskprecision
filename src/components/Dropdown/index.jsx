@@ -18,6 +18,7 @@ const Dropdown = ({setTasks, newTaskId}) => {
             type:'action',
             icon: <IconBox icon={actionIcon} />,
             id: newTaskId,
+            isHidden: false,
         }
         setTasks(currentTasks => [...currentTasks, newCallToAction ])
     }

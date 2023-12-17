@@ -4,7 +4,7 @@ const IconBox = (props) => {
     const {icon, handleAction, ...rest} = props;
     return (
         <Flex justifyContent="center" alignItems="center" onClick={handleAction} {...rest}>
-            <Icon as={icon} />
+            {<Icon as={icon} />}
         </Flex>
     )
 }
