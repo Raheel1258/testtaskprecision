@@ -4,10 +4,8 @@ import { actionIcon, checkIcon, feedIcon, previewIcon } from "../IconBox/Icons";
 import Dropdown from "../Dropdown";
 
 const Toolbar = ({
-  setTodos,
-  setCallToActions,
-  newTodoId,
-  newCallToActionId,
+  setTasks,
+  newTaskId,
 }) => {
   return (
     <Flex flexDir="column">
@@ -15,10 +13,8 @@ const Toolbar = ({
         <IconBox icon={feedIcon} />
         <Text>HomeFeed</Text>
         <Dropdown
-          newTodoId={newTodoId}
-          newCallToActionId={newCallToActionId}
-          setTodos={setTodos}
-          setCallToActions={setCallToActions}
+          newTaskId={newTaskId}
+          setTasks={setTasks}
         />
       </Flex>
       <Flex>

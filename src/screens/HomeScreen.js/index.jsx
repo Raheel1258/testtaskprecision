@@ -4,20 +4,19 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import { SideBar } from "../../components/SideBar";
 import Toolbar from "../../components/Toolbar";
 import HomeContent from "../../components/HomeContent";
+import MobilePreview from "../../components/MobilePreview";
 
 export const Home = () => {
-  const [todos, setTodos] = useState([]);
-  const [callToActions, setCallToActions] = useState([]);
-  console.log("todos: ", todos);
-  console.log("actions: ", callToActions);
+  const [tasks, setTasks] = useState([]);
+  console.log("tasks: ", tasks);
   return (
     <Grid
       templateAreas={`
-                  "nav subNav main"
+                  "nav subNav main preview"
                  
                   `}
       gridTemplateRows={"1fr"}
-      gridTemplateColumns={"86px 357px 1fr"}
+      gridTemplateColumns={"86px 357px 357px 1fr"}
       h="100vh"
       color="blackAlpha.700"
       fontWeight="bold"
@@ -27,18 +26,22 @@ export const Home = () => {
       </GridItem>
       <GridItem area={"subNav"}>
         <Toolbar
-          newTodoId={todos.length}
-          newCallToActionId={callToActions.length}
-          setTodos={setTodos}
-          setCallToActions={setCallToActions}
+          // newTodoId={todos.length}
+          newTaskId={tasks.length}
+          // newCallToActionId={callToActions.length}
+          setTasks={setTasks}
+          // setCallToActions={setCallToActions}
         />
       </GridItem>
       <GridItem area={"main"}>
         <HomeContent
-          setCallToActions={setCallToActions}
-          setTodos={setTodos}
-          callToActions={callToActions}
-          todos={todos}
+          setTasks={setTasks}
+          tasks={tasks}
+        />
+      </GridItem>
+      <GridItem area={"preview"}>
+        <MobilePreview
+          tasks={tasks}
         />
       </GridItem>
     </Grid>

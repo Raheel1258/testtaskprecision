@@ -10,24 +10,26 @@ import {
 import { actionIcon, checkIcon, plusIcon } from "../IconBox/Icons";
 import IconBox from "../IconBox";
 
-const Dropdown = ({setTodos, setCallToActions, newTodoId, newCallToActionId}) => {
+const Dropdown = ({setTasks, newTaskId}) => {
 
     const addCallToAction = () => {
         const newCallToAction = {
             content: 'Call to Action',
+            type:'action',
             icon: <IconBox icon={actionIcon} />,
-            id: newCallToActionId,
+            id: newTaskId,
         }
-        setCallToActions(currentActions => [...currentActions, newCallToAction ])
+        setTasks(currentTasks => [...currentTasks, newCallToAction ])
     }
 
     const addTodo = () => {
         const newTodo = {
             content: 'Todo',
+            type:'todo',
             icon: <IconBox icon={checkIcon} />,
-            id: newTodoId,
+            id: `${newTaskId}`,
         }
-        setTodos(currentTodos => [...currentTodos, newTodo ])
+        setTasks(currentTasks => [...currentTasks, newTodo ])
     }
 
   return (
