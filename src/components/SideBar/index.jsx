@@ -13,13 +13,13 @@ export const SideBar = () => {
       {sidebarItems.map((icon) => {
         if (icon.name === "feed")
           return (
-            <Flex cursor="pointer" bg="#ecedf0" borderRadius="10px" p={3} mx="auto" w="55%" alignItems="center" justifyContent="center">
+            <Flex key={icon.name} cursor="pointer" bg="#ecedf0" borderRadius="10px" p={3} mx="auto" w="55%" alignItems="center" justifyContent="center">
               <Icon boxSize={6} as={icon.icon} />
             </Flex>
           );
         else
           return (
-            <Flex cursor="pointer" p={2} mx="auto" w="50%" alignItems="center" justifyContent="center">
+            <Flex key={icon.name} cursor="pointer" p={2} mx="auto" w="50%" alignItems="center" justifyContent="center">
               <Icon boxSize={6} as={icon.icon} />
             </Flex>
           );
