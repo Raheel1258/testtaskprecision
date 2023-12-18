@@ -1,9 +1,8 @@
-import { Flex, Icon, Image, List, ListItem, Text } from "@chakra-ui/react";
+import { Flex, Image, List, ListItem, Text } from "@chakra-ui/react";
 import TaskItem from "../TaskItem";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import IconBox from "../IconBox";
 import { dragIcon } from "../IconBox/Icons";
-import { useState } from "react";
 import actionIconSrc from "../../assets/png/action.png";
 import todoIconSrc from "../../assets/png/todo.png";
 

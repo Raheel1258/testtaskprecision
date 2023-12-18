@@ -1,5 +1,4 @@
-import { Icon } from "@chakra-ui/icons";
-import { clipboardIcon, clipboardPreviewIcon, sidebarEventIcon, sidebarFeedIcon, sidebarHomeIcon, sidebarInboxIcon, sidebarMemberIcon, sidebarMembersIcon, sidebarReportsIcon, sidebarResourcesIcon, sidebarServiceIcon } from "../IconBox/Icons";
+import { sidebarEventIcon, sidebarFeedIcon, sidebarHomeIcon, sidebarInboxIcon, sidebarMemberIcon, sidebarMembersIcon, sidebarReportsIcon, sidebarResourcesIcon, sidebarServiceIcon } from "../IconBox/Icons";
 
 export const sidebarItems = [
     {

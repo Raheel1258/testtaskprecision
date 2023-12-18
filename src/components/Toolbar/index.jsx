@@ -1,6 +1,5 @@
 import { Divider, Flex, Icon, Image, Text } from "@chakra-ui/react";
-import IconBox from "../IconBox";
-import { actionIcon, checkIcon, feedIcon, previewIcon } from "../IconBox/Icons";
+import { feedIcon } from "../IconBox/Icons";
 import Dropdown from "../Dropdown";
 import previewIconSrc from "../../assets/png/preview.png";
 import actionIconSrc from "../../assets/png/action.png";

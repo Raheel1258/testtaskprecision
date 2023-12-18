@@ -1,15 +1,13 @@
 import { Flex, Icon } from "@chakra-ui/react";
-import IconBox from "../IconBox";
 import { deleteIcon, hiddenIcon, viewIcon } from "../IconBox/Icons";
 import { useState } from "react";
 
 const TaskItem = (props) => {
   const [toggleVisibility, setToggleVisibility] = useState(true);
-  const { children, setTask, taskId, ...rest } = props;
+  const { children, setTask, taskId } = props;
   console.log(toggleVisibility);
 
   const handleDelete = () => {
-    console.log('deleting?')
     //filter todos and call to actions to exclude the specific task by its id and update state.
     setTask((currentTasks) => {
       const updatedTasks = currentTasks.filter((task) => task.id !== taskId);
