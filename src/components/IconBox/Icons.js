@@ -728,12 +728,7 @@ export const sidebarInboxIcon = createIcon({
   displayName: "sidebarInboxIcon",
   viewBox: "0 0 24 24",
   path: (
-    <svg
-      width="24"
-      height="24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M6.88867 6.0002H16.6664"
         stroke="#4B4B4D"

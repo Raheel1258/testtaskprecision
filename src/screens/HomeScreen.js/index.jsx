@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
 
-import { SideBar } from "../../components/SideBar";
+import SideBar from "../../components/SideBar";
 import Toolbar from "../../components/Toolbar";
 import HomeContent from "../../components/HomeContent";
 import MobilePreview from "../../components/MobilePreview";
 
 export const Home = () => {
+
+  // handling state for todos and call-to-actions
   const [tasks, setTasks] = useState([]);
 
   return (
     <Grid
       templateAreas={`
                   "nav subNav main preview"
-                 
                   `}
       gridTemplateRows={"1fr"}
       gridTemplateColumns={"86px 357px 400px 1fr"}
@@ -25,24 +26,14 @@ export const Home = () => {
         <SideBar />
       </GridItem>
       <GridItem area={"subNav"}>
-        <Toolbar
-          // newTodoId={todos.length}
-          newTaskId={tasks.length}
-          // newCallToActionId={callToActions.length}
-          setTasks={setTasks}
-          // setCallToActions={setCallToActions}
-        />
+        <Toolbar newTaskId={tasks.length} setTasks={setTasks} />
       </GridItem>
       <GridItem area={"main"} px={10}>
-        <HomeContent
-          setTasks={setTasks}
-          tasks={tasks}
-        />
+        <HomeContent setTasks={setTasks} tasks={tasks} />
       </GridItem>
+      {/*------- Showing Mobile Preview-----  */}
       <GridItem area={"preview"}>
-        <MobilePreview
-          tasks={tasks}
-        />
+        <MobilePreview tasks={tasks} />
       </GridItem>
     </Grid>
   );
