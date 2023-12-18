@@ -10,7 +10,6 @@ const HomeContent = ({ tasks, setTasks }) => {
   const handleOnDragEnd = (result) => {
     //if the item is dragged outside the droppable area, the result is null
     if (!result.destination) return;
-    console.log(result);
     const tasksAfterDragDrop = Array.from(tasks);
     const [reorderedTask] = tasksAfterDragDrop.splice(result.source.index, 1);
     tasksAfterDragDrop.splice(result.destination.index, 0, reorderedTask);

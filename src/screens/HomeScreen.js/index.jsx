@@ -8,7 +8,7 @@ import MobilePreview from "../../components/MobilePreview";
 
 export const Home = () => {
   const [tasks, setTasks] = useState([]);
-  console.log("tasks: ", tasks);
+
   return (
     <Grid
       templateAreas={`

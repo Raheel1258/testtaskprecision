@@ -5,13 +5,11 @@ import { useState } from "react";
 const TaskItem = (props) => {
   const [toggleVisibility, setToggleVisibility] = useState(true);
   const { children, setTask, taskId } = props;
-  console.log(toggleVisibility);
 
   const handleDelete = () => {
     //filter todos and call to actions to exclude the specific task by its id and update state.
     setTask((currentTasks) => {
       const updatedTasks = currentTasks.filter((task) => task.id !== taskId);
-      console.log(updatedTasks)
       return [...updatedTasks];
     });
   };
