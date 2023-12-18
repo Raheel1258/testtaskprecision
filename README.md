@@ -1,4 +1,6 @@
 
+**NOTE:** This screen is designed on 1440*900 as per requirement.
+
 # Access link: 
 ### https://657ff6f0c7a0a508e093a89e--subtle-daifuku-0bf2c8.netlify.app/
 
