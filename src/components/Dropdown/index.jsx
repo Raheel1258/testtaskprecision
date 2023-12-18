@@ -6,9 +6,12 @@ import {
   IconButton,
   Flex,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import { actionIcon, checkIcon, plusIcon } from "../IconBox/Icons";
 import IconBox from "../IconBox";
+import actionIconSrc from '../../assets/png/action.png'
+import todoIconSrc from '../../assets/png/todo.png'
 
 const Dropdown = ({setTasks, newTaskId}) => {
 
@@ -34,19 +37,19 @@ const Dropdown = ({setTasks, newTaskId}) => {
     }
 
   return (
-    <Menu>
-      <MenuButton as={IconButton} icon={<IconBox icon={plusIcon} />} />
-      <MenuList>
-        <MenuItem onClick={addCallToAction}>
-          <Flex>
-            <IconBox icon={actionIcon} />
-            <Text>Call to Action</Text>
+    <Menu closeOnSelect={false} autoSelect={false}>
+      <MenuButton _hover={{bg:'white'}} _active={{bg:'white'}} bg="white" as={IconButton} icon={<IconBox icon={plusIcon} />} />
+      <MenuList w="285px" boxShadow="md" borderRadius="15px" py={2} px={4}>
+        <MenuItem _hover={{bg: '#ecedf0'}} onClick={addCallToAction}>
+          <Flex alignItems="center" gap={3}>
+            <Image src={actionIconSrc} />
+            <Text fontWeight="500">Call to Action</Text>
           </Flex>
         </MenuItem>
-        <MenuItem onClick={addTodo}>
-          <Flex>
-            <IconBox icon={checkIcon} />
-            <Text>Todo</Text>
+        <MenuItem _hover={{bg: '#ecedf0'}} onClick={addTodo}>
+          <Flex alignItems="center" gap={3}>
+            <Image src={todoIconSrc} />
+            <Text fontWeight="500">Todo</Text>
           </Flex>
         </MenuItem>
       </MenuList>

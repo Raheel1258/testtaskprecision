@@ -1,13 +1,13 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 
 const MobilePreview = ({ tasks }) => {
   const visibleTasks = tasks.filter((task) => !task.isHidden);
   return (
-    <Box width="100%" h="100%" p={5}>
+    <Flex alignItems="center" width="100%" h="100%" p={5}>
       <Box
-        m="auto"
+        my="auto"
         width="352.65px"
         height="724px"
         border="8px"
@@ -51,7 +51,7 @@ const MobilePreview = ({ tasks }) => {
           <Navbar />
         </Box>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

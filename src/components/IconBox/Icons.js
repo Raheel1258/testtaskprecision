@@ -370,3 +370,398 @@ export const hiddenIcon = createIcon({
     </svg>
   ),
 });
+
+export const sidebarFoldIcon = createIcon({
+  displayName: "sidebarFoldIcon",
+  viewBox: "0 0 32 32",
+  path: (
+    <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M9.15037 22.5822C8.50329 22.5822 8 22.0933 8 21.4462V11.136C8 10.4889 8.50329 10 9.15037 10C9.79746 10 10.3007 10.4889 10.3007 11.136V21.4462C10.3007 22.0933 9.79746 22.5822 9.15037 22.5822ZM11.5472 16.2983C11.5472 15.6224 12.0361 15.1335 12.7407 15.1335H18.2769L20.592 15.2917L18.2625 13.2498L17.3566 12.3583C17.1121 12.1282 16.9971 11.8406 16.9971 11.4955C16.9971 10.8484 17.486 10.3883 18.1475 10.3883C18.4351 10.3883 18.7371 10.4889 18.9815 10.7477L23.6261 15.4355C23.8562 15.6656 24 15.9676 24 16.2983C24 16.6434 23.8706 16.9454 23.6261 17.1754L18.9959 21.8344C18.7658 22.0645 18.4207 22.1939 18.1475 22.1939C17.4573 22.1939 16.9971 21.7338 16.9971 21.0867C16.9971 20.7128 17.1265 20.454 17.3566 20.2383L18.2625 19.3755L20.6064 17.3049L18.2769 17.4774H12.7407C12.0361 17.4774 11.5472 17.0173 11.5472 16.2983Z"
+        fill="#4B4B4D"
+      />
+    </svg>
+  ),
+});
+
+export const sidebarHomeIcon = createIcon({
+  displayName: "sidebarHomeIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M6.88889 22.7696H4.44444C3.79614 22.7696 3.17438 22.5104 2.71596 22.049C2.25754 21.5876 2 20.9619 2 20.3094V9.59485C2.00023 9.2263 2.08272 8.86252 2.24138 8.53036C2.40004 8.19821 2.63082 7.90617 2.91667 7.67583L10.25 1.77117C10.6836 1.4218 11.2224 1.23145 11.7778 1.23145C12.3332 1.23145 12.872 1.4218 13.3056 1.77117L20.6389 7.67583C20.9247 7.90617 21.1555 8.19821 21.3142 8.53036C21.4728 8.86252 21.5553 9.2263 21.5556 9.59485V20.3094C21.5556 20.9619 21.298 21.5876 20.8396 22.049C20.3812 22.5104 19.7594 22.7696 19.1111 22.7696H16.6667"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.11133 15.3888H15.4447"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.7773 11.6984V22.7696"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+});
+
+export const sidebarMembersIcon = createIcon({
+  displayName: "sidebarMembersIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M11.8 11.2353C13.073 11.2353 14.2939 11.7311 15.1941 12.6136C16.0943 13.4961 16.6 14.6931 16.6 15.9412V20.6471H7V15.9412C7 14.6931 7.50571 13.4961 8.40589 12.6136C9.30606 11.7311 10.527 11.2353 11.8 11.2353V11.2353Z"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.8004 7.70588C13.1259 7.70588 14.2004 6.65243 14.2004 5.35294C14.2004 4.05345 13.1259 3 11.8004 3C10.4749 3 9.40039 4.05345 9.40039 5.35294C9.40039 6.65243 10.4749 7.70588 11.8004 7.70588Z"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.4 20.6471C2.76348 20.6471 2.15303 20.3992 1.70295 19.9579C1.25286 19.5166 1 18.9182 1 18.2941V16.8235C0.999238 16.0012 1.29136 15.2045 1.82594 14.5708C2.36052 13.9372 3.104 13.5064 3.928 13.3529"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.60039 10.0588C5.26313 10.0588 5.80039 9.5321 5.80039 8.88236C5.80039 8.23261 5.26313 7.70589 4.60039 7.70589C3.93765 7.70589 3.40039 8.23261 3.40039 8.88236C3.40039 9.5321 3.93765 10.0588 4.60039 10.0588Z"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.1999 20.6471C20.8364 20.6471 21.4468 20.3992 21.8969 19.9579C22.347 19.5166 22.5999 18.9182 22.5999 18.2941V16.8235C22.6006 16.0012 22.3085 15.2045 21.7739 14.5708C21.2394 13.9372 20.4959 13.5064 19.6719 13.3529"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18.9998 10.0588C19.6625 10.0588 20.1998 9.5321 20.1998 8.88236C20.1998 8.23261 19.6625 7.70589 18.9998 7.70589C18.3371 7.70589 17.7998 8.23261 17.7998 8.88236C17.7998 9.5321 18.3371 10.0588 18.9998 10.0588Z"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+});
+
+export const sidebarResourcesIcon = createIcon({
+  displayName: "sidebarResourcesIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_68_124)">
+        <path
+          d="M19.9997 1.33301H3.99967C2.52691 1.33301 1.33301 2.52691 1.33301 3.99967V19.9997C1.33301 21.4724 2.52691 22.6663 3.99967 22.6663H19.9997C21.4724 22.6663 22.6663 21.4724 22.6663 19.9997V3.99967C22.6663 2.52691 21.4724 1.33301 19.9997 1.33301Z"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6.66602 6.99968C8.43935 6.99968 8.43935 8.99968 10.2127 8.99968C11.986 8.99968 11.9993 6.99968 13.7727 6.99968C15.546 6.99968 15.5593 8.99968 17.3327 8.99968"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6.66602 14.9997C8.43935 14.9997 8.43935 16.9997 10.2127 16.9997C11.986 16.9997 11.9993 14.9997 13.7727 14.9997C15.546 14.9997 15.5593 16.9997 17.3327 16.9997"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_68_124">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+});
+
+export const sidebarServiceIcon = createIcon({
+  displayName: "sidebarServiceIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M20 12L19.1733 15.32C19.0279 15.8957 18.6944 16.4063 18.2259 16.771C17.7573 17.1357 17.1804 17.3336 16.5867 17.3333H7.41333C6.81957 17.3336 6.24269 17.1357 5.77414 16.771C5.30558 16.4063 4.97214 15.8957 4.82667 15.32L4 12"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M1.33301 12H22.6663"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10.666 18.6667V22.6667H13.3327V18.6667"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M16 8H8H16Z" fill="#4B4B4D" />
+      <path
+        d="M16 8H8"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.9993 3.99999C12.7357 3.99999 13.3327 3.40304 13.3327 2.66666C13.3327 1.93028 12.7357 1.33333 11.9993 1.33333C11.263 1.33333 10.666 1.93028 10.666 2.66666C10.666 3.40304 11.263 3.99999 11.9993 3.99999Z"
+        fill="#4B4B4D"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+});
+
+export const sidebarEventIcon = createIcon({
+  displayName: "sidebarEventIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_68_114)">
+        <path
+          d="M20.09 4H3.39C2.07004 4 1 5.07004 1 6.39V18.31C1 19.63 2.07004 20.7 3.39 20.7H20.09C21.41 20.7 22.48 19.63 22.48 18.31V6.39C22.48 5.07004 21.41 4 20.09 4Z"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M21.5401 6.18H1.87012L2.47012 4.55L21.1901 4.27L21.5401 6.18Z"
+          stroke="#4B4B4D"
+          stroke-width="1.9"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18.2599 10.27H13.1899V12.81H18.2599V10.27Z"
+          fill="#4B4B4D"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_68_114">
+          <rect
+            width="23.48"
+            height="18.7"
+            fill="white"
+            transform="translate(0 3)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+});
+
+export const sidebarReportsIcon = createIcon({
+  displayName: "sidebarReportsIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4 19.43V15.18"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.33008 19.43V12.07"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.6699 19.43V15.18"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20 19.43V10.31"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4 9.31L9.33 5.66L14.67 8.86L20 4"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+});
+
+export const sidebarMemberIcon = createIcon({
+  displayName: "sidebarMemberIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_68_103)">
+        <path
+          d="M16.3801 17.2442C16.0025 16.3979 15.388 15.6791 14.6107 15.1744C13.8335 14.6698 12.9268 14.4009 12.0001 14.4002C11.0734 14.4009 10.1667 14.6698 9.3895 15.1744C8.61227 15.6791 7.99775 16.3979 7.62012 17.2442"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12.0006 10.7998C13.3261 10.7998 14.4006 9.7253 14.4006 8.39982C14.4006 7.07433 13.3261 5.99982 12.0006 5.99982C10.6751 5.99982 9.60059 7.07433 9.60059 8.39982C9.60059 9.7253 10.6751 10.7998 12.0006 10.7998Z"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12.0002 22.8C17.9649 22.8 22.8002 17.9647 22.8002 12C22.8002 6.03534 17.9649 1.20001 12.0002 1.20001C6.03552 1.20001 1.2002 6.03534 1.2002 12C1.2002 17.9647 6.03552 22.8 12.0002 22.8Z"
+          stroke="#4B4B4D"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_68_103">
+          <rect width="24" height="24" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+});
+
+export const sidebarFeedIcon = createIcon({
+  displayName: "sidebarFeedIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_68_53)">
+        <path
+          d="M12.2 19.83C12.07 19.83 11.94 19.81 11.82 19.76C11.7 19.71 11.59 19.63 11.49 19.54C11.4 19.45 11.33 19.34 11.28 19.22C11.22 19.1 11.2 18.96 11.2 18.83C11.2 18.7 11.22 18.57 11.28 18.45C11.33 18.33 11.4 18.22 11.49 18.13C11.88 17.74 12.51 17.73 12.9 18.13C13.08 18.32 13.19 18.57 13.19 18.83C13.19 18.96 13.16 19.1 13.11 19.22C12.95 19.59 12.59 19.83 12.19 19.83H12.2Z"
+          fill="#222224"
+        />
+        <path
+          d="M7.8999 8.66H16.4999"
+          stroke="#8247F6"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M7.8999 13.75H16.4999"
+          stroke="#8247F6"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18.03 1H6.37C5.06108 1 4 2.06108 4 3.37V20.28C4 21.5889 5.06108 22.65 6.37 22.65H18.03C19.3389 22.65 20.4 21.5889 20.4 20.28V3.37C20.4 2.06108 19.3389 1 18.03 1Z"
+          stroke="#222224"
+          stroke-width="2"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M7.52002 1.18L10.09 3.51H14.3L16.88 1.18H7.52002Z"
+          fill="#222224"
+          stroke="#222224"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_68_53">
+          <rect
+            width="18.4"
+            height="23.65"
+            fill="white"
+            transform="translate(3)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  ),
+});
+
+export const sidebarInboxIcon = createIcon({
+  displayName: "sidebarInboxIcon",
+  viewBox: "0 0 24 24",
+  path: (
+    <svg
+      width="24"
+      height="24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.88867 6.0002H16.6664"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.88867 10.8002H16.6664"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M19.1111 1.2002H4.44444C3.09441 1.2002 2 2.27471 2 3.6002V20.4002C2 21.7257 3.09441 22.8002 4.44444 22.8002H19.1111C20.4611 22.8002 21.5556 21.7257 21.5556 20.4002V3.6002C21.5556 2.27471 20.4611 1.2002 19.1111 1.2002Z"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M2 15.6002H7.5C7.98623 15.6002 8.45255 15.7898 8.79636 16.1274C9.14018 16.465 9.33333 16.9228 9.33333 17.4002V17.4002C9.33333 17.8776 9.52649 18.3354 9.8703 18.673C10.2141 19.0106 10.6804 19.2002 11.1667 19.2002H12.3889C12.8751 19.2002 13.3414 19.0106 13.6853 18.673C14.0291 18.3354 14.2222 17.8776 14.2222 17.4002C14.2222 16.9228 14.4154 16.465 14.7592 16.1274C15.103 15.7898 15.5693 15.6002 16.0556 15.6002H21.5556"
+        stroke="#4B4B4D"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  ),
+});

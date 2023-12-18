@@ -16,13 +16,13 @@ export const Home = () => {
                  
                   `}
       gridTemplateRows={"1fr"}
-      gridTemplateColumns={"86px 357px 357px 1fr"}
+      gridTemplateColumns={"86px 357px 400px 1fr"}
       h="100vh"
       color="blackAlpha.700"
       fontWeight="bold"
     >
-      <GridItem bg="pink.300" area={"nav"}>
-        Nav
+      <GridItem area={"nav"}>
+        <SideBar />
       </GridItem>
       <GridItem area={"subNav"}>
         <Toolbar
@@ -33,7 +33,7 @@ export const Home = () => {
           // setCallToActions={setCallToActions}
         />
       </GridItem>
-      <GridItem area={"main"}>
+      <GridItem area={"main"} px={10}>
         <HomeContent
           setTasks={setTasks}
           tasks={tasks}

@@ -1,32 +1,42 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Divider, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import IconBox from "../IconBox";
 import { actionIcon, checkIcon, feedIcon, previewIcon } from "../IconBox/Icons";
 import Dropdown from "../Dropdown";
+import previewIconSrc from "../../assets/png/preview.png";
+import actionIconSrc from "../../assets/png/action.png";
+import todoIconSrc from "../../assets/png/todo.png";
 
-const Toolbar = ({
-  setTasks,
-  newTaskId,
-}) => {
+const Toolbar = ({ setTasks, newTaskId }) => {
   return (
-    <Flex flexDir="column">
-      <Flex>
-        <IconBox icon={feedIcon} />
-        <Text>HomeFeed</Text>
-        <Dropdown
-          newTaskId={newTaskId}
-          setTasks={setTasks}
-        />
+    <Flex pt={12} h="100%" flexDir="column" px={3} gap={10} boxShadow="md">
+      <Flex alignItems="center" gap={5} w="90%" justifyContent="space-between">
+        <Flex alignItems="center" gap={2} px={5}>
+          <Icon boxSize={5} as={feedIcon} />
+          <Text color="black" fontSize="2xl" fontWeight={800}>
+            Homefeed
+          </Text>
+        </Flex>
+        <Dropdown newTaskId={newTaskId} setTasks={setTasks} />
       </Flex>
-      <Flex>
-        <IconBox icon={previewIcon} />
-        <Text>Live Preview</Text>
+      <Flex flexDir="column" gap={3}>
+        <Flex
+          borderRadius="15px"
+          p={5}
+          gap={5}
+          alignItems="center"
+          bg="#ecedf0"
+        >
+          <Image src={previewIconSrc} />
+          <Text fontSize="xl">Live Preview</Text>
+        </Flex>
+        <Divider borderWidth="2px" />
       </Flex>
-      <Flex>
-        <IconBox icon={actionIcon} />
+      <Flex px={5} alignItems="center" gap={5}>
+        <Image src={actionIconSrc} />
         <Text>Call to Action</Text>
       </Flex>
-      <Flex>
-        <IconBox icon={checkIcon} />
+      <Flex px={5} alignItems="center" gap={5}>
+        <Image src={todoIconSrc} />
         <Text>Todo</Text>
       </Flex>
     </Flex>
